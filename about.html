@@ -134,7 +134,7 @@
 
     .team-member {
       width: 200px;
-      background-color: #ffffff;
+      background-color: #f0f4f8;
       border-radius: 10px;
       padding: 20px;
       text-align: center;
@@ -294,6 +294,51 @@
   }
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.navbar-hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+}
+
+.navbar-hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #001f3f;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    padding-top: 10px;
+    flex-direction: column;
+  }
+
+  .navbar-right a {
+    padding: 10px;
+  }
+
+  .menu-toggle:checked + .navbar-hamburger + .navbar-right {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -302,9 +347,15 @@
 
 <div class="navbar">
   <div class="navbar-left">
-    <img src="images/logo_quantcore.png" alt="QuantCore Logo">
+    <a href="index.html"><img src="images/logo_quantcore.png" alt="QuantCore Logo"></a>
     <span>QuantCore</span>
   </div>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="navbar-hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
   <div class="navbar-right">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
@@ -373,19 +424,19 @@
   </div>
 
   <div class="core-team">
-    <h3>👩‍🔧 Meet the Core Team</h3>
+    <h3>👩‍🔧Our Team</h3>
     <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
       <div class="team-member">
         <img src="images/rahime.jpg" alt="Rahime Gedik">
-        <strong>Rahime Gedik</strong>
+        <strong>Rahime GEDİK</strong>
       </div>
       <div class="team-member">
         <img src="images/zeynep.jpg" alt="Zeynep Çöl">
-        <strong>Zeynep Çöl</strong>
+        <strong>Zeynep ÇÖL</strong>
       </div>
       <div class="team-member">
         <img src="images/burak.jpg" alt="Burak Sayar">
-        <strong>Burak Sayar</strong>
+        <strong>Burak SAYAR</strong>
       </div>
     </div>
   </div>
