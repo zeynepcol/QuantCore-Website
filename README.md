@@ -1,7 +1,7 @@
 <h1 align="center">QUANTCORE WEBSITE</h1>
 
 <p align="center">
-  🌐 <a href="https://quantcore-systems.netlify.app/" target="_blank">View Live Website</a>
+  🌐 <a href="https://quantcore-systems.netlify.app/" target="_blank">View Website</a>
 </p>
 
 
