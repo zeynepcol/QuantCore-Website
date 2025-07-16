@@ -13,7 +13,6 @@
 **QuantCore Systems** is a fictional quantum device company. This is a **static HTML5 mockup website** that demonstrates clean design, responsive layout, and professional product presentation using only HTML and CSS.
 
 
-
 ## 📁 Website Pages
 
 | Page                 | Description                                                             |
@@ -39,13 +38,11 @@
 - **Fixed Navbar** with clear navigation
 
 
-
 ## 🚫 Tech Limitations (By Assignment)
 
 - ❌ No JavaScript
 - ❌ No PHP or backend
 - ✅ Only HTML5 and CSS
-
 
 
 ## 📡 Contact
