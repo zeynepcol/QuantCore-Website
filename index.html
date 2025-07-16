@@ -26,12 +26,12 @@
     }
 
     .navbar-left img {
-      height: 32px;
+      height: 40px;
       margin-right: 12px;
     }
 
     .navbar-left span {
-      font-size: 18px;
+      font-size: 24px;
       color: #ffffff;
       font-weight: bold;
     }
@@ -46,7 +46,7 @@
       color: #ffffff;
       margin-left: 20px;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 20px;
     }
 
     .navbar-right a.active {
@@ -160,6 +160,27 @@ a.button:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
+
+      @media (min-width: 768px) {
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .navbar-left, .navbar-right {
+        width: auto;
+        margin-bottom: 0;
+      }
+
+      .features {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .feature-box {
+        width: 30%;
+      }
+    }
   </style>
 </head>
 <body>

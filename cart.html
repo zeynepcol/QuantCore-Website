@@ -26,12 +26,12 @@
     }
 
     .navbar-left img {
-      height: 32px;
+      height: 40px;
       margin-right: 12px;
     }
 
     .navbar-left span {
-      font-size: 18px;
+      font-size: 24px;
       color: #ffffff;
       font-weight: bold;
     }
@@ -46,7 +46,7 @@
       color: #ffffff;
       margin-left: 20px;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 20px;
     }
 
     .navbar-right a.active {
@@ -159,6 +159,45 @@
       text-decoration: none;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
       z-index: 999;
+    }
+
+      @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+
+      .navbar-right a,
+      .navbar-search,
+      .navbar-cart {
+        margin: 10px 0 0 0;
+      }
+      
+      header {
+        padding: 40px 20px;
+      }
+      
+      section {
+        padding: 20px;
+      }
+      
+      .navbar-search {
+        width: 100%;
+      }
+      
+      .navbar-search input {
+        width: 70%;
+      }
+      
+      .navbar-search button {
+        width: 30%;
+      }
     }
   </style>
 </head>
